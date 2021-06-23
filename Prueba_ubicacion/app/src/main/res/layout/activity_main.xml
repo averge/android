@@ -1,0 +1,114 @@
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ubicacion actual:"
+    android:textSize="25dp"
+    android:gravity="center"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:id="@+id/txtCoordenadas"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/f_casa"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="5dp"
+        android:background="@color/celeste"
+        android:gravity="center|top"
+        android:text="Casa"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/celeste"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Aun no se ha cargado una ubicacion"
+        android:textSize="20dp"
+        android:id="@+id/txt_casa"/>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/mapita"
+        android:layout_margin="5dp"
+        android:id="@+id/bt_casa"
+        android:onClick="pres_casa"/>
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/fondo_trabajo"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/celeste"
+        android:layout_margin="5dp"
+        android:text="Trabajo"
+        android:gravity="center|top"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/celeste"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Aun no se ha cargado una ubicacion"
+        android:textSize="20dp"
+        android:id="@+id/txt_trabajo"
+        />
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/mapita"
+        android:layout_margin="5dp"
+        android:id="@+id/bt_trabajo"
+        android:onClick="pres_trabajo"/>
+</FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/celeste"
+        android:layout_margin="5dp"
+        android:text="Facultad"
+        android:gravity="center|top"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/fondo_facultad"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/celeste"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Aun no se ha cargado una ubicacion"
+        android:textSize="20dp"
+        android:id="@+id/txt_facultad"/>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/mapita"
+        android:layout_margin="5dp"
+        android:id="@+id/bt_facultad"
+        android:onClick="pres_facultad"/>
+</FrameLayout>
+</LinearLayout>
